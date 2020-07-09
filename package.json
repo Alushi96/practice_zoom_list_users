@@ -1,0 +1,23 @@
+{
+  "name": "practice_zoom_list_users",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alushi96/practice_zoom_list_users.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alushi96/practice_zoom_list_users/issues"
+  },
+  "homepage": "https://github.com/Alushi96/practice_zoom_list_users#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

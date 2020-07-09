@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Zoom Test</title>
+</head>
+
+<body>
+    <button id="user">Click for user</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://api.zoom.us/v2/users?page_size=30&status=active",
+  "method": "GET",
+  "headers": {
+    "authorization": "Bearer eyJhbGciOiJIUzUxMiIsInYiOiIyLjAiLCJraWQiOiIxOGIwMjMwNC05ZjNmLTQ3MzMtODEzZi1lOTQwZGEyZjMxYzAifQ.eyJ2ZXIiOiI2IiwiY2xpZW50SWQiOiJSeWNjNnRDcVJJNk9JMVhlRHV3MldnIiwiY29kZSI6InRXdXM5eG93ZjFfS1dhR254b0hRQk9tZEhGcHByYjdfUSIsImlzcyI6InVybjp6b29tOmNvbm5lY3Q6Y2xpZW50aWQ6UnljYzZ0Q3FSSTZPSTFYZUR1dzJXZyIsImF1dGhlbnRpY2F0aW9uSWQiOiJkYzA0MTkzN2Y0MzhlNTJjOTY0M2ZlYmQwYTMwZGFmMyIsInVzZXJJZCI6IktXYUdueG9IUUJPbWRIRnBwcmI3X1EiLCJncm91cE51bWJlciI6MCwiYXVkIjoiaHR0cHM6Ly9vYXV0aC56b29tLnVzIiwiYWNjb3VudElkIjoiZHRHWGl6Um1STS1FTmJlY1RrLVNZdyIsIm5iZiI6MTU5NDI2NzAzMSwiZXhwIjoxNTk0MjcwNjMxLCJ0b2tlblR5cGUiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE1OTQyNjcwMzEsImp0aSI6IjBlM2JiYjA1LTdjOTctNGQ2ZC05NWM3LTZkNDFjNTJmNjEwMiIsInRvbGVyYW5jZUlkIjowfQ.obawUs_4F1QJ-d779BA1B09njX34vr8RE-3aru_7jZmfVQUiLYvHwt1ZZGqjN0J7qyIPRJHrWPCQiW3rH42bqg"
+  }
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+      </script>
+
+</body>
+</html>
